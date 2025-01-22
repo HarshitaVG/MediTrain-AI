@@ -1,0 +1,6 @@
+Flask==2.0.1
+Flask-SQLAlchemy==2.4.4
+SQLAlchemy==1.4.22
+tensorflow==2.18.0
+keras==3.5.0
+werkzeug==2.0.3

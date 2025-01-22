@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediTrain AI - Home</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #e9edf0, #f7f9fb);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            color: #333;
+        }
+
+        /* Container Styles */
+        .container {
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 0 20px;
+            padding: 20px;
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Header Styles */
+        header h1 {
+            margin: 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #007BFF;
+            color: #007BFF;
+        }
+
+        /* Main Content Styles */
+        main {
+            padding: 20px 0;
+        }
+
+        .intro p {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .content {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .content h2 {
+            color: #007BFF;
+        }
+
+        .content p {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+
+        .content ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .content ul li {
+            margin-bottom: 10px;
+        }
+
+        .posters {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .posters img {
+            max-width: 45%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to MediTrain AI</h1>
+        </header>
+        <main>
+            <section class="intro">
+                <p>Empowering the Doctors of Tomorrow, Today</p>
+                <a href="{{ url_for('prescribe') }}" class="button">Get Prescription</a>
+            </section>
+            <section class="content">
+                <h2>About MediTrain AI</h2>
+                <p>MediTrain AI is an advanced AI-based system designed to assist doctors in diagnosing and prescribing treatments for various medical conditions. Our goal is to enhance healthcare by providing accurate and reliable recommendations based on patient symptoms.</p>
+                <h2>Features</h2>
+                <ul>
+                    <li>Accurate Symptom Analysis</li>
+                    <li>Comprehensive Prescription Suggestions</li>
+                    <li>User-Friendly Interface</li>
+                    <li>Secure and Confidential Data Handling</li>
+                </ul>
+            </section>
+            <!--<section class="posters">
+                <img src="your-poster-image1.jpg" alt="Healthcare Poster">
+                <img src="your-poster-image2.jpg" alt="Medical AI Poster">
+            </section> -->
+        </main>
+    </div>
+</body>
+</html>
